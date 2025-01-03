@@ -3,14 +3,8 @@
 ###
 
 # Data directory
-/data/download/*.*
-!/data/download/*.md
-
-/data/GeoTIFF/*.*
-!/data/GeoTIFF/*.md
-
-/data/CSV/*.*
-!/data/CSV/*.md
+/data/download/*
+!/data/*.md
 
 ###
 # NODE.JS
