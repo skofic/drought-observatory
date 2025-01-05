@@ -4,7 +4,13 @@
 
 # Data directory
 /data/download/*
-!/data/*.md
+!/data/download/*.md
+
+/data/CSV/*
+!/data/CSV/*.md
+
+/data/JSONL/*
+!/data/JSONL/*.md
 
 ###
 # NODE.JS

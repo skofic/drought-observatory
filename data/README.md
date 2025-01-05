@@ -2,9 +2,10 @@
 
 This directory contains all the data used in the project. The directory is divided as follows:
 
+- **required**: This directory contains the `DroughtObservatoryMap.jsonl.gz` dump file.
 - **download**: This directory contains the files downloaded from the [European Drought Observatory portal](https://drought.emergency.copernicus.eu/tumbo/edo/download/). *You must download one file per year*.
-- **GeoTIFF**: This directory will cotain all unzipped files from *download*.
-- **XYZ**: This directory will contain all files converted from GeoTIFF to XYZ format.
+- **CSV**: This directory will contain all unzipped files from *download* in CSV format.
+- **JSONL**: This directory will contain all processed files in JSONL format.
 
 The data indicators are the following:
 
