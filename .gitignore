@@ -12,6 +12,12 @@
 /data/JSONL/*
 !/data/JSONL/*.md
 
+/data/required/*
+!/data/required/*.md
+
+/data/result/*
+!/data/result/*.md
+
 ###
 # NODE.JS
 ###
