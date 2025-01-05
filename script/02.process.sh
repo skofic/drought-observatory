@@ -3,15 +3,18 @@
 ###
 # Convert TIF files and place them in CSV folder.
 #
-# $1: Local home path.
+# $1: Database.
+# $2: Local home path.
+# $3: Start year.
+# $4: End year.
 ###
 
 ###
 # Check parameters.
 ###
-if [ "$#" -ne 1 ]
+if [ "$#" -ne 4 ]
 then
-	echo "Usage: expand_downloads.sh <home path>"
+	echo "Usage: 02.process.sh <database> <home path> <start year> <end year>"
 	exit 1
 fi
 
@@ -23,20 +26,98 @@ source "${HOME}/.ArangoDB"
 ###
 # Globals.
 ###
-folder="${1}/data/download"
-prefix="cdinx_m_euu_"
-epoc="${path}/DroughtObservatory/CDI"
+first=1
+config="${2}/config/prefixes.txt"
 
 echo "--------------------------------------------------"
-echo "- CONVERT FILES"
+echo "- PROCESS FILES"
 echo "--------------------------------------------------"
-start=$(date +%s)
 
 ###
-# Iterate TIF files.
+# Iterate years.
 ###
+for year in $(seq ${3} 1 ${4}); do
+
+  echo "--------------------------------------------------"
+  echo "- PROCESSING YEAR ${year}"
+  echo "--------------------------------------------------"
+  echo ""
+
+  ###
+  # Iterate prefixes.
+  ###
+  while IFS=' ' read -r symbol prefix variable radius
+  do
+
+    echo "--------------------------------------------------"
+    echo "- Year:     ${year}"
+    echo "- Symbol:   ${symbol}"
+    echo "- Prefix:   ${prefix}"
+    echo "- Variable: ${variable}"
+    echo "- Radius:   ${radius}"
+    echo "--------------------------------------------------"
+
+    ###
+    # Iterate CSV files.
+    ###
+    for file in "${folder}/${symbol}${year}"*.csv
+    do
+
+      ###
+      # Get date from filename.
+      ###
+      len=${#symbol}
+      name=$(basename -- "$file")
+      date=${name:${len}:8}
+      target="${symbol}${date}"
+
+      echo ""
+      echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+      echo "<<< IMPORT ${target}.csv"
+      echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+
+      ###
+      # Import file into database.
+      ###
+      arangoimport \
+          --server.endpoint "$host" \
+          --server.database "$1" \
+          --server.username "$user" \
+          --server.password "$pass" \
+          --file "$file" \
+          --headers-file "$head" \
+          --type "csv" \
+          --collection "LOAD" \
+          --overwrite true \
+          --auto-rate-limit true \
+          --ignore-missing true
+      if [ $? -ne 0 ]
+      then
+          echo "*************"
+          echo "*** ERROR ***"
+          echo "*************"
+          exit 1
+      fi
+
+      ###
+      # Process file.
+      ###
+      script="${2}/workflow/${symbol}dump.sh"
+      sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius}
+
+      ###
+      # Add to Store.
+      ###
+
+    done
+
+  done < "${config}"
+
+  echo ""
+
+done
 
 echo "--------------------------------------------------"
-echo "- CONVERT CDI FILES: $elapsed seconds"
+echo "- PROCESSED FILES"
 echo "--------------------------------------------------"
 echo ""

@@ -5,6 +5,10 @@
 #
 # $1: Database name.
 # $2: Local home path.
+# $3: Current year.
+# $4: Symbol.
+# $5: Variable.
+# $6: Radius.
 ###
 
 ###
@@ -24,9 +28,9 @@ source "${HOME}/.ArangoDB"
 ###
 # Globals.
 ###
-symbol="CDI_"
-radius=0.031752945
-variable="env_climate_cdi"
+symbol="$4"
+radius="$6"
+variable="$5"
 dataset="7b789ef4-aa2d-4f25-91c4-feab9d4cbb9b"
 cache="${path}/cache"
 folder="${2}/data/CSV"

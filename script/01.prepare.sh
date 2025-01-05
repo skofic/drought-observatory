@@ -15,7 +15,7 @@
 ###
 if [ "$#" -ne 3 ]
 then
-	echo "Usage: expand_downloads.sh <home path> <start year> <end year>"
+	echo "Usage: 01.prepare.sh <home path> <start year> <end year>"
 	exit 1
 fi
 
