@@ -15,6 +15,7 @@ COLLECTION_SHAPES="DroughtObservatoryMap"
 FILE_SHAPES="${2}/data/required/DroughtObservatoryMap.jsonl.gz"
 INDEX_NAME1="idx_hash"
 INDEX_NAME2="idx_hash_date"
+INDEX_NAME3="idx_value"
 ARANGODB_HOST="$host"
 ARANGODB_USER="$user"
 ARANGODB_PASSWORD="$pass"
@@ -77,9 +78,9 @@ if (!db._collection('$COLLECTION_STORE')) {
 ///
 // Create indexes.
 ///
-var collection2 = db._collection('$COLLECTION_STORE');
-if (!collection2.getIndexes().some(function(i) { return i.name === '$INDEX_NAME1'; })) {
-  collection2.ensureIndex({
+var collection = db._collection('$COLLECTION_STORE');
+if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME1'; })) {
+  collection.ensureIndex({
   	name: '$INDEX_NAME1',
   	type: 'persistent',
   	fields: [
@@ -90,8 +91,8 @@ if (!collection2.getIndexes().some(function(i) { return i.name === '$INDEX_NAME1
 } else {
   console.log('Index $INDEX_NAME1 already exists');
 }
-if (!collection2.getIndexes().some(function(i) { return i.name === '$INDEX_NAME2'; })) {
-  collection2.ensureIndex({
+if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME2'; })) {
+  collection.ensureIndex({
   	name: '$INDEX_NAME2',
   	type: 'persistent',
   	fields: [
@@ -102,6 +103,19 @@ if (!collection2.getIndexes().some(function(i) { return i.name === '$INDEX_NAME2
   console.log('===> Index $INDEX_NAME2 created for $COLLECTION_STORE');
 } else {
   console.log('Index $INDEX_NAME2 already exists');
+}
+collection = db._collection('$COLLECTION_LOAD');
+if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME3'; })) {
+  collection.ensureIndex({
+  	name: '$INDEX_NAME3',
+  	type: 'persistent',
+  	fields: [
+		'value'
+  	]
+  });
+  console.log('===> Index $INDEX_NAME3 created for $COLLECTION_LOAD');
+} else {
+  console.log('Index $INDEX_NAME3 already exists');
 }
 " > "$TEMP_FILE"
 
