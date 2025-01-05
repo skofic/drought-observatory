@@ -31,7 +31,7 @@ folder="${1}/data/download"
 final="${1}/data/CSV"
 
 echo "--------------------------------------------------"
-echo "- CONVERT CDI FILES"
+echo "- CONVERT FILES"
 echo "--------------------------------------------------"
 
 ###
@@ -65,7 +65,7 @@ do
     fi
 
     echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-    echo ">>> CONVERT CSV FROM ${target}.tif TO ${target}.csv"
+    echo ">>> CONVERT FROM ${target}.tif TO ${target}.csv"
     echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
     ###
@@ -132,6 +132,6 @@ do
 done
 
 echo "--------------------------------------------------"
-echo "- CONVERTED CDI FILES"
+echo "- CONVERTED FILES"
 echo "--------------------------------------------------"
 echo ""
