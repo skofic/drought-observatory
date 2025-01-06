@@ -1,0 +1,24 @@
+
+/**
+ * Insert new shapes into map collection.
+ */
+LET shapes = (
+    FOR doc IN STORE
+
+        COLLECT hash = doc.geometry_hash
+        INTO groups
+
+    RETURN {
+        _key: groups[0].doc._key,
+        geometry: groups[0].doc.geometry,
+        geometry_point: groups[0].doc.geometry_point,
+        geometry_point_radius: groups[0].doc.geometry_point_radius
+    }
+)
+
+FOR shape IN shapes
+INSERT shape
+INTO DroughtObservatoryMap
+OPTIONS {
+    ignoreErrors: true
+}

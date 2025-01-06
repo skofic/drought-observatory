@@ -16,13 +16,12 @@ FOR doc IN LOAD
     LET hash = MD5(TO_STRING(polygon))
 
 RETURN {
-    _key: hash,
     geometry_hash: hash,
     std_date: @date,
     properties: {
         [@variable]: doc.value
     },
-    std_terms: @variable,
+    std_terms: [@variable],
     std_dataset_ids: [@dataset],
 
     geometry: polygon,
