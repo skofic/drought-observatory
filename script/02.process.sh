@@ -131,7 +131,7 @@ do
 					--server.username "$user" \
 					--server.password "$pass" \
 					--output-directory "$cache" \
-					--custom-query-file "${2}/query/${4}process.aql" \
+					--custom-query-file "${2}/query/${symbol}process.aql" \
 					--custom-query-bindvars "{\"date\": \"${date}\", \"variable\": \"${variable}\", \"dataset\": \"${dataset}\", \"radius\": ${radius}}" \
 					--compress-output true \
 					--overwrite true \
