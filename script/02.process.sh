@@ -158,6 +158,11 @@ do
 					exit 1
 				fi
 
+				echo "--------------------------------------------------"
+				echo "- DELETE CSV FILE ${name}"
+				echo "--------------------------------------------------"
+				rm -f "$file"
+
 				echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 				echo "<<< IMPORT ${target}.jsonl.gz"
 				echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
@@ -340,6 +345,11 @@ do
 						exit 1
 					fi
 				fi
+
+				echo "--------------------------------------------------"
+				echo "- DELETE JSONL FILE ${name}"
+				echo "--------------------------------------------------"
+				rm -f "${export}/${target}.jsonl.gz"
 
 			else
 				echo "No files found matching the pattern ${pattern}."
