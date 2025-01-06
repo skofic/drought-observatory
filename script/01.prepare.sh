@@ -47,7 +47,7 @@ for year in $(seq ${2} 1 ${3}); do
   ###
   # Iterate prefixes.
   ###
-  while IFS=' ' read -r symbol prefix variable radius
+  while IFS=' ' read -r symbol prefix variable radius dataset
   do
 
     echo "--------------------------------------------------"
@@ -56,17 +56,32 @@ for year in $(seq ${2} 1 ${3}); do
     echo "- Prefix:   ${prefix}"
     echo "- Variable: ${variable}"
     echo "- Radius:   ${radius}"
+    echo "- Dataset:  ${dataset}"
     echo "--------------------------------------------------"
 
     ###
     # Expand file.
     ###
     sh "${1}/script/workflow/expand.sh" "${1}" "${prefix}" ${year}
+    if [ $? -ne 0 ]
+    then
+        echo "*************"
+        echo "*** ERROR ***"
+        echo "*************"
+        exit 1
+    fi
 
     ###
     # Convert file.
     ###
     sh "${1}/script/workflow/convert.sh" "${1}" "${symbol}" "${prefix}"
+    if [ $? -ne 0 ]
+    then
+        echo "*************"
+        echo "*** ERROR ***"
+        echo "*************"
+        exit 1
+    fi
 
   done < "${config}"
 
