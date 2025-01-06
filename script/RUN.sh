@@ -68,6 +68,30 @@ do
 		echo "--------------------------------------------------"
 
 		###
+		# Expand file.
+		###
+		sh "${2}/script/workflow/expand.sh" "${2}" "${prefix}" ${year}
+		if [ $? -ne 0 ]
+		then
+			echo "*************"
+			echo "*** ERROR ***"
+			echo "*************"
+			exit 1
+		fi
+
+		###
+		# Convert file.
+		###
+		sh "${2}/script/workflow/convert.sh" "${2}" "${symbol}" "${prefix}"
+		if [ $? -ne 0 ]
+		then
+			echo "*************"
+			echo "*** ERROR ***"
+			echo "*************"
+			exit 1
+		fi
+
+		###
 		# Iterate CSV files for current year.
 		###
 		pattern="${folder}/${symbol}${year}"

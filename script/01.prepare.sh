@@ -59,29 +59,29 @@ for year in $(seq ${2} 1 ${3}); do
     echo "- Dataset:  ${dataset}"
     echo "--------------------------------------------------"
 
-    ###
-    # Expand file.
-    ###
-    sh "${1}/script/workflow/expand.sh" "${1}" "${prefix}" ${year}
-    if [ $? -ne 0 ]
-    then
-        echo "*************"
-        echo "*** ERROR ***"
-        echo "*************"
-        exit 1
-    fi
+	###
+	# Expand file.
+	###
+	sh "${1}/script/workflow/expand.sh" "${1}" "${prefix}" ${year}
+	if [ $? -ne 0 ]
+	then
+		echo "*************"
+		echo "*** ERROR ***"
+		echo "*************"
+		exit 1
+	fi
 
-    ###
-    # Convert file.
-    ###
-    sh "${1}/script/workflow/convert.sh" "${1}" "${symbol}" "${prefix}"
-    if [ $? -ne 0 ]
-    then
-        echo "*************"
-        echo "*** ERROR ***"
-        echo "*************"
-        exit 1
-    fi
+	###
+	# Convert file.
+	###
+	sh "${1}/script/workflow/convert.sh" "${1}" "${symbol}" "${prefix}"
+	if [ $? -ne 0 ]
+	then
+		echo "*************"
+		echo "*** ERROR ***"
+		echo "*************"
+		exit 1
+	fi
 
   done < "${config}"
 
