@@ -1,11 +1,11 @@
-FAPAN_ fpanv_m_gdo_ env_climate_fapan 0.04166666667
-FAPAR_ fparv_m_gdo_ env_climate_fapar 0.04166666667
-CDI_ cdinx_m_edo_ env_climate_cdi 0.020833335
-SMA_ smian_m_eul_ env_climate_sma 0.00833333
-SMI_ sminx_m_eul_ env_climate_smi 0.00833333
-TWS_ twsan_m_gdo_ env_climate_tws 0.5
-TPMIN_ tpmin_m_euu_ env_climate_hcwi_min 0.125
-TPMAX_ tpmax_m_euu_ env_climate_hcwi_max 0.125
-TPMAN_ tpman_m_euu_ env_climate_hcwi_ano 0.125
-COLDW_ coldw_m_euu_ env_climate_cwd 0.125
-HEATW_ heatw_m_euu_ env_climate_hwd 0.125
+FAPAN_ fpanv_m_gdo_ env_climate_fapan 0.04166666667 056e569a-66ef-4033-8d15-5c4c3c36c1bb
+FAPAR_ fparv_m_gdo_ env_climate_fapar 0.04166666667 056e569a-66ef-4033-8d15-5c4c3c36c1bb
+CDI_ cdinx_m_edo_ env_climate_cdi 0.020833335 7b789ef4-aa2d-4f25-91c4-feab9d4cbb9b
+SMA_ smian_m_eul_ env_climate_sma 0.00833333 9eda6111-c840-4862-9759-4a805cd6fc35
+SMI_ sminx_m_eul_ env_climate_smi 0.00833333 9eda6111-c840-4862-9759-4a805cd6fc35
+TWS_ twsan_m_gdo_ env_climate_tws 0.5 398f8b9b-9cd4-4fb5-bc4d-49b88a5d210a
+TPMIN_ tpmin_m_euu_ env_climate_hcwi_min 0.125 6b12011e-ef30-47d4-b4a3-3c8bdc4b4464
+TPMAX_ tpmax_m_euu_ env_climate_hcwi_max 0.125 6b12011e-ef30-47d4-b4a3-3c8bdc4b4464
+TPMAN_ tpman_m_euu_ env_climate_hcwi_ano 0.125 6b12011e-ef30-47d4-b4a3-3c8bdc4b4464
+COLDW_ coldw_m_euu_ env_climate_cwd 0.125 6b12011e-ef30-47d4-b4a3-3c8bdc4b4464
+HEATW_ heatw_m_euu_ env_climate_hwd 0.125 6b12011e-ef30-47d4-b4a3-3c8bdc4b4464
