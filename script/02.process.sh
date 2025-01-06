@@ -65,7 +65,6 @@ for year in $(seq ${3} 1 ${4}); do
     # Iterate CSV files fir current year.
     ###
     pattern="${folder}/${symbol}${year}"
-    echo "$pattern"
     for file in "${pattern}"*.csv
     do
 
@@ -87,28 +86,28 @@ for year in $(seq ${3} 1 ${4}); do
         echo "<<< IMPORT ${name}"
         echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 
-  #      ###
-  #      # Import file into database.
-  #      ###
-  #      arangoimport \
-  #          --server.endpoint "$host" \
-  #          --server.database "$1" \
-  #          --server.username "$user" \
-  #          --server.password "$pass" \
-  #          --file "$file" \
-  #          --headers-file "$head" \
-  #          --type "csv" \
-  #          --collection "LOAD" \
-  #          --overwrite true \
-  #          --auto-rate-limit true \
-  #          --ignore-missing true
-  #      if [ $? -ne 0 ]
-  #      then
-  #          echo "*************"
-  #          echo "*** ERROR ***"
-  #          echo "*************"
-  #          exit 1
-  #      fi
+        ###
+        # Import file into database.
+        ###
+        arangoimport \
+            --server.endpoint "$host" \
+            --server.database "$1" \
+            --server.username "$user" \
+            --server.password "$pass" \
+            --file "$file" \
+            --headers-file "$head" \
+            --type "csv" \
+            --collection "LOAD" \
+            --overwrite true \
+            --auto-rate-limit true \
+            --ignore-missing true
+        if [ $? -ne 0 ]
+        then
+            echo "*************"
+            echo "*** ERROR ***"
+            echo "*************"
+            exit 1
+        fi
 
   #      ###
   #      # Process file.
