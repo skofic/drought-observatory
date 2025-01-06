@@ -44,6 +44,7 @@ echo ""
 for year in $(seq ${3} 1 ${4})
 do
 
+	echo ""
 	echo "--------------------------------------------------"
 	echo "- PROCESSING YEAR ${year}"
 	echo "--------------------------------------------------"
@@ -359,42 +360,42 @@ do
 	# Group year data.
 	###
 
-#	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-#	echo ">>> EXPORT DATA FOR YEAR ${year}"
-#	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-#
-#	###
-#	# Generate complete records.
-#	###
-#	arangoexport \
-#		--server.endpoint "$host" \
-#		--server.database "$1" \
-#		--server.username "$user" \
-#		--server.password "$pass" \
-#		--output-directory "$cache" \
-#		--custom-query-file "${2}/query/data.aql" \
-#		--compress-output true \
-#		--overwrite true \
-#		--type "jsonl"
-#	if [ $? -ne 0 ]
-#	then
-#		echo "*************"
-#		echo "*** ERROR ***"
-#		echo "*************"
-#		exit 1
-#	fi
-#
-#	###
-#	# Name dump to the DATA.
-#	###
-#	mv -f "${cache}/query.jsonl.gz" "${export}/DATA.jsonl.gz"
-#	if [ $? -ne 0 ]
-#	then
-#		echo "*************"
-#		echo "*** ERROR ***"
-#		echo "*************"
-#		exit 1
-#	fi
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+	echo ">>> EXPORT DATA FOR YEAR ${year}"
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+
+	###
+	# Generate complete records.
+	###
+	arangoexport \
+		--server.endpoint "$host" \
+		--server.database "$1" \
+		--server.username "$user" \
+		--server.password "$pass" \
+		--output-directory "$cache" \
+		--custom-query-file "${2}/query/merge.aql" \
+		--compress-output true \
+		--overwrite true \
+		--type "jsonl"
+	if [ $? -ne 0 ]
+	then
+		echo "*************"
+		echo "*** ERROR ***"
+		echo "*************"
+		exit 1
+	fi
+
+	###
+	# Name dump to the DATA.
+	###
+	mv -f "${cache}/query.jsonl.gz" "${export}/${year}.jsonl.gz"
+	if [ $? -ne 0 ]
+	then
+		echo "*************"
+		echo "*** ERROR ***"
+		echo "*************"
+		exit 1
+	fi
 
 done #iterating years
 
