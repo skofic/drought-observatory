@@ -8,7 +8,7 @@ FOR doc IN STORE
     INTO groups
 
 RETURN {
-    _key: groups[0].doc._key,
+    _key: hash,
     geometry: groups[0].doc.geometry,
     geometry_point: groups[0].doc.geometry_point,
     geometry_point_radius: groups[0].doc.geometry_point_radius
