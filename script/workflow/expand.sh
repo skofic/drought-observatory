@@ -38,9 +38,13 @@ echo "--------------------------------------------------"
 for file in "${folder}/${prefix}"*.zip
 do
 
-    name=$(basename "${file}")
+  ###
+  # Check if there is a file.
+  ###
+  if [ -e "$file" ]; then
+
     echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-    echo "> EXPAND ${name}"
+    echo "> EXPAND $(basename "${file}")"
     echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
     ###
@@ -55,19 +59,6 @@ do
         exit 1
     fi
 
-done
-
-###
-# Delete ZIP files.
-###
-for file in "${folder}/${prefix}"*.zip
-do
-
-    name=$(basename "${file}")
-    echo "␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡"
-    echo "␡ DELETE ${name}"
-    echo "␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡"
-
     ###
     # Delete file.
     ###
@@ -79,6 +70,11 @@ do
         echo "*************"
         exit 1
     fi
+
+  else
+    echo "No files found matching the pattern ${folder}/${prefix}."
+    break
+  fi
 
 done
 

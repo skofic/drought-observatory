@@ -40,6 +40,11 @@ echo "--------------------------------------------------"
 for file in "${folder}/${prefix}"*.tif
 do
 
+  ###
+  # Check if there is a file.
+  ###
+  if [ -e "$file" ]; then
+
     ###
     # Get date from filename.
     ###
@@ -81,6 +86,11 @@ do
     fi
     echo ""
 
+  else
+    echo "No files found matching the pattern ${folder}/${prefix}."
+    break
+  fi
+
 done
 
 echo "␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡"
@@ -93,6 +103,11 @@ echo "␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡�
 for file in "${folder}/${prefix}"*.tif
 do
 
+  ###
+  # Check if there is a file.
+  ###
+  if [ -e "$file" ]; then
+
     ###
     # Delete file.
     ###
@@ -104,6 +119,11 @@ do
         echo "*************"
         exit 1
     fi
+
+  else
+    echo "No files found matching the pattern ${folder}/${prefix}."
+    break
+  fi
 
 done
 
@@ -117,6 +137,11 @@ echo "␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡�
 for file in "${folder}/${symbol}"*.tif
 do
 
+  ###
+  # Check if there is a file.
+  ###
+  if [ -e "$file" ]; then
+
     ###
     # Delete file.
     ###
@@ -128,6 +153,11 @@ do
         echo "*************"
         exit 1
     fi
+
+  else
+    echo "No files found matching the pattern ${folder}/${symbol}."
+    break
+  fi
 
 done
 
