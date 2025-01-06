@@ -73,6 +73,37 @@ then
     exit 1
 fi
 
+###
+# Import data into STORE.
+###
+
+echo ""
+echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+echo "<<< IMPORT ${target}.jsonl.gz"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+
+###
+# Import file into database.
+###
+arangoimport \
+    --server.endpoint "$host" \
+    --server.database "$1" \
+    --server.username "$user" \
+    --server.password "$pass" \
+    --file "${export}/${target}.jsonl.gz" \
+    --type "jsonl" \
+    --collection "STORE" \
+    --overwrite true \
+    --auto-rate-limit true \
+    --ignore-missing true
+if [ $? -ne 0 ]
+then
+    echo "*************"
+    echo "*** ERROR ***"
+    echo "*************"
+    exit 1
+fi
+
 #
 #
 #
@@ -139,6 +170,6 @@ fi
 #done
 
 echo "--------------------------------------------------"
-echo "- DUMPED CDI FILES"
+echo "- DUMPED FILES"
 echo "--------------------------------------------------"
 echo ""
