@@ -3,6 +3,9 @@
  * Load dump and export final record.
  */
 FOR doc IN LOAD
+    FILTER doc.value >= 0
+    FILTER doc.value <= 7
+
     LET point = GEO_POINT(doc.lon, doc.lat)
     LET polygon = GEO_POLYGON([
         [ doc.lon-@radius, doc.lat-@radius ],
@@ -12,6 +15,7 @@ FOR doc IN LOAD
         [ doc.lon-@radius, doc.lat-@radius ]
     ])
     LET hash = MD5(TO_STRING(polygon))
+
 RETURN {
     _key: hash,
     geometry_hash: hash,
