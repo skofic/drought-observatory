@@ -24,6 +24,11 @@ fi
 source "${HOME}/.ArangoDB"
 
 ###
+# Setup.
+###
+sh "${2}/script/00.setup.sh" "${1}" "${2}"
+
+###
 # Globals.
 ###
 first=1
