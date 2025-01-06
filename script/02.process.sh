@@ -29,10 +29,12 @@ source "${HOME}/.ArangoDB"
 first=1
 head="${2}/config/header.csv"
 config="${2}/config/prefixes.txt"
+folder="${2}/data/CSV"
 
 echo "--------------------------------------------------"
 echo "- PROCESS FILES"
 echo "--------------------------------------------------"
+echo ""
 
 ###
 # Iterate years.
@@ -62,61 +64,73 @@ for year in $(seq ${3} 1 ${4}); do
     ###
     # Iterate CSV files fir current year.
     ###
-    for file in "${folder}/${symbol}${year}"*.csv
+    pattern="${folder}/${symbol}${year}"
+    echo "$pattern"
+    for file in "${pattern}"*.csv
     do
 
       ###
-      # Get date from filename.
+      # Check if there is a file.
       ###
-      len=${#symbol}
-      name=$(basename -- "$file")
-      date=${name:${len}:8}
-      target="${symbol}${date}"
+      if [ -e "$file" ]; then
 
-      echo ""
-      echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
-      echo "<<< IMPORT ${target}.csv"
-      echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+        ###
+        # Get date from filename.
+        ###
+        len=${#symbol}
+        name=$(basename -- "$file")
+        date=${name:${len}:8}
+        target="${symbol}${date}"
 
-      ###
-      # Import file into database.
-      ###
-      arangoimport \
-          --server.endpoint "$host" \
-          --server.database "$1" \
-          --server.username "$user" \
-          --server.password "$pass" \
-          --file "$file" \
-          --headers-file "$head" \
-          --type "csv" \
-          --collection "LOAD" \
-          --overwrite true \
-          --auto-rate-limit true \
-          --ignore-missing true
-      if [ $? -ne 0 ]
-      then
-          echo "*************"
-          echo "*** ERROR ***"
-          echo "*************"
-          exit 1
+        echo ""
+        echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+        echo "<<< IMPORT ${name}.csv"
+        echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+
+  #      ###
+  #      # Import file into database.
+  #      ###
+  #      arangoimport \
+  #          --server.endpoint "$host" \
+  #          --server.database "$1" \
+  #          --server.username "$user" \
+  #          --server.password "$pass" \
+  #          --file "$file" \
+  #          --headers-file "$head" \
+  #          --type "csv" \
+  #          --collection "LOAD" \
+  #          --overwrite true \
+  #          --auto-rate-limit true \
+  #          --ignore-missing true
+  #      if [ $? -ne 0 ]
+  #      then
+  #          echo "*************"
+  #          echo "*** ERROR ***"
+  #          echo "*************"
+  #          exit 1
+  #      fi
+
+  #      ###
+  #      # Process file.
+  #      ###
+  #      script="${2}/workflow/${symbol}dump.sh"
+  #      sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius} "${date}" "${dataset}"
+  #      if [ $? -ne 0 ]
+  #      then
+  #          echo "*************"
+  #          echo "*** ERROR ***"
+  #          echo "*************"
+  #          exit 1
+  #      fi
+
+        ###
+        # Add to Store.
+        ###
+
+      else
+        echo "No files found matching the pattern ${pattern}."
+        break
       fi
-
-      ###
-      # Process file.
-      ###
-      script="${2}/workflow/${symbol}dump.sh"
-      sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius} "${date}" "${dataset}"
-      if [ $? -ne 0 ]
-      then
-          echo "*************"
-          echo "*** ERROR ***"
-          echo "*************"
-          exit 1
-      fi
-
-      ###
-      # Add to Store.
-      ###
 
     done
 
