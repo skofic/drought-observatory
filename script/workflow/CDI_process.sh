@@ -9,14 +9,16 @@
 # $4: Symbol.
 # $5: Variable.
 # $6: Radius.
+# $7: Date.
+# $8: Dataset.
 ###
 
 ###
 # Check parameters.
 ###
-if [ "$#" -ne 2 ]
+if [ "$#" -ne 8 ]
 then
-	echo "Usage: CDI_dump.sh <database name> <home path>"
+	echo "Usage: CDI_dump.sh <database name> <home path> <year> <symbol> <variable <radius> <date> <dataset>"
 	exit 1
 fi
 
@@ -24,6 +26,64 @@ fi
 # Load default parameters.
 ###
 source "${HOME}/.ArangoDB"
+
+###
+# Globals.
+###
+database="$1"
+home="$2"
+date="$7"
+symbol="$4"
+radius="$6"
+variable="$5"
+dataset="$8"
+cache="${path}/cache"
+folder="${2}/data/CSV"
+export="${2}/data/JSONL"
+head="${2}/config/header.csv"
+query="${2}/query/process.aql"
+
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ">>> PROCESS ${target}.jsonl.gz"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+
+###
+# Export data into data folder.
+###
+arangoexport \
+    --server.endpoint "$host" \
+    --server.database "$1" \
+    --server.username "$user" \
+    --server.password "$pass" \
+    --output-directory "$cache" \
+    --custom-query-file "$query" \
+    --custom-query-bindvars "{\"date\": \"${date}\", \"variable\": \"${variable}\", \"dataset\": \"${dataset}\", \"radius\": ${radius}}" \
+    --compress-output true \
+    --overwrite true \
+    --type "jsonl"
+    if [ $? -ne 0 ]
+then
+    echo "*************"
+    echo "*** ERROR ***"
+    echo "*************"
+    exit 1
+fi
+
+###
+# Name dump to the collection name.
+###
+mv -f "${cache}/query.jsonl.gz" "${export}/${target}.jsonl.gz"
+if [ $? -ne 0 ]
+then
+    echo "*************"
+    echo "*** ERROR ***"
+    echo "*************"
+    exit 1
+fi
+
+
+
+
 
 ###
 # Globals.
@@ -76,44 +136,6 @@ do
         --overwrite true \
         --auto-rate-limit true \
         --ignore-missing true
-    if [ $? -ne 0 ]
-    then
-        echo "*************"
-        echo "*** ERROR ***"
-        echo "*************"
-        exit 1
-    fi
-
-    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-    echo ">>> PROCESS ${target}.jsonl.gz"
-    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-
-    ###
-    # Export data into data folder.
-    ###
-    arangoexport \
-        --server.endpoint "$host" \
-        --server.database "$1" \
-        --server.username "$user" \
-        --server.password "$pass" \
-        --output-directory "$cache" \
-        --custom-query-file "$query" \
-        --custom-query-bindvars "{\"date\": \"${date}\", \"variable\": \"${variable}\", \"dataset\": \"${dataset}\", \"radius\": ${radius}}" \
-        --compress-output true \
-        --overwrite true \
-        --type "jsonl"
-        if [ $? -ne 0 ]
-    then
-        echo "*************"
-        echo "*** ERROR ***"
-        echo "*************"
-        exit 1
-    fi
-
-    ###
-    # Name dump to the collection name.
-    ###
-    mv -f "${cache}/query.jsonl.gz" "${export}/${target}.jsonl.gz"
     if [ $? -ne 0 ]
     then
         echo "*************"

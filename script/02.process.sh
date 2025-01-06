@@ -27,6 +27,7 @@ source "${HOME}/.ArangoDB"
 # Globals.
 ###
 first=1
+head="${2}/config/header.csv"
 config="${2}/config/prefixes.txt"
 
 echo "--------------------------------------------------"
@@ -46,7 +47,7 @@ for year in $(seq ${3} 1 ${4}); do
   ###
   # Iterate prefixes.
   ###
-  while IFS=' ' read -r symbol prefix variable radius
+  while IFS=' ' read -r symbol prefix variable radius dataset
   do
 
     echo "--------------------------------------------------"
@@ -55,10 +56,11 @@ for year in $(seq ${3} 1 ${4}); do
     echo "- Prefix:   ${prefix}"
     echo "- Variable: ${variable}"
     echo "- Radius:   ${radius}"
+    echo "- Dataset:  ${dataset}"
     echo "--------------------------------------------------"
 
     ###
-    # Iterate CSV files.
+    # Iterate CSV files fir current year.
     ###
     for file in "${folder}/${symbol}${year}"*.csv
     do
@@ -103,7 +105,14 @@ for year in $(seq ${3} 1 ${4}); do
       # Process file.
       ###
       script="${2}/workflow/${symbol}dump.sh"
-      sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius}
+      sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius} "${date}" "${dataset}"
+      if [ $? -ne 0 ]
+      then
+          echo "*************"
+          echo "*** ERROR ***"
+          echo "*************"
+          exit 1
+      fi
 
       ###
       # Add to Store.
