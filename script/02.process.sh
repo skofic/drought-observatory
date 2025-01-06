@@ -32,6 +32,7 @@ config="${2}/config/prefixes.txt"
 cache="${path}/cache"
 folder="${2}/data/CSV"
 export="${2}/data/JSONL"
+result="${2}/data/result"
 
 echo "--------------------------------------------------"
 echo "- PROCESS FILES"
@@ -388,7 +389,7 @@ do
 	###
 	# Name dump to the DATA.
 	###
-	mv -f "${cache}/query.jsonl.gz" "${export}/${year}.jsonl.gz"
+	mv -f "${cache}/query.jsonl.gz" "${result}/${year}.jsonl.gz"
 	if [ $? -ne 0 ]
 	then
 		echo "*************"
