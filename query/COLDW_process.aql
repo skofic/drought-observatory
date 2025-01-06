@@ -1,0 +1,30 @@
+
+/**
+ * Load dump and export COLDW final record.
+ */
+FOR doc IN LOAD
+    FILTER doc.value != -9999
+
+    LET point = GEO_POINT(doc.lon, doc.lat)
+    LET polygon = GEO_POLYGON([
+        [ doc.lon-@radius, doc.lat-@radius ],
+        [ doc.lon+@radius, doc.lat-@radius ],
+        [ doc.lon+@radius, doc.lat+@radius ],
+        [ doc.lon-@radius, doc.lat+@radius ],
+        [ doc.lon-@radius, doc.lat-@radius ]
+    ])
+    LET hash = MD5(TO_STRING(polygon))
+
+RETURN {
+    geometry_hash: hash,
+    std_date: @date,
+    properties: {
+        [@variable]: doc.value
+    },
+    std_terms: [@variable],
+    std_dataset_ids: [@dataset],
+
+    geometry: polygon,
+    geometry_point: point,
+    geometry_point_radius: @radius
+}

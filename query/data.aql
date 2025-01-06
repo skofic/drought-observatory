@@ -1,0 +1,13 @@
+
+/**
+ * Export data.
+ */
+FOR doc IN STORE
+
+RETURN {
+    geometry_hash: doc.geometry_hash,
+    std_date: doc.std_date,
+    properties: doc.properties,
+    std_terms: doc.std_terms,
+    std_dataset_ids: doc.std_dataset_ids
+}

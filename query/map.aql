@@ -1,24 +1,15 @@
 
 /**
- * Insert new shapes into map collection.
+ * Export current shapes into map format.
  */
-LET shapes = (
-    FOR doc IN STORE
+FOR doc IN STORE
 
-        COLLECT hash = doc.geometry_hash
-        INTO groups
+    COLLECT hash = doc.geometry_hash
+    INTO groups
 
-    RETURN {
-        _key: groups[0].doc._key,
-        geometry: groups[0].doc.geometry,
-        geometry_point: groups[0].doc.geometry_point,
-        geometry_point_radius: groups[0].doc.geometry_point_radius
-    }
-)
-
-FOR shape IN shapes
-INSERT shape
-INTO DroughtObservatoryMap
-OPTIONS {
-    ignoreErrors: true
+RETURN {
+    _key: groups[0].doc._key,
+    geometry: groups[0].doc.geometry,
+    geometry_point: groups[0].doc.geometry_point,
+    geometry_point_radius: groups[0].doc.geometry_point_radius
 }
