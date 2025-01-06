@@ -1,10 +1,9 @@
 
 /**
- * Load dump and export final record.
+ * Load dump and export FAPAN final record.
  */
 FOR doc IN LOAD
-    FILTER doc.value >= 0
-    FILTER doc.value <= 7
+    FILTER doc.value != -9999
 
     LET point = GEO_POINT(doc.lon, doc.lat)
     LET polygon = GEO_POLYGON([
@@ -21,7 +20,7 @@ RETURN {
     geometry_hash: hash,
     std_date: @date,
     properties: {
-        [@variable]: CONCAT(@variable, "_", TO_STRING(doc.value))
+        [@variable]: doc.value
     },
     std_terms: @variable,
     std_dataset_ids: [@dataset],

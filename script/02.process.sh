@@ -108,20 +108,20 @@ for year in $(seq ${3} 1 ${4}); do
             echo "*************"
             exit 1
         fi
-        exit 0
 
-  #      ###
-  #      # Process file.
-  #      ###
-  #      script="${2}/workflow/${symbol}dump.sh"
-  #      sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius} "${date}" "${dataset}"
-  #      if [ $? -ne 0 ]
-  #      then
-  #          echo "*************"
-  #          echo "*** ERROR ***"
-  #          echo "*************"
-  #          exit 1
-  #      fi
+        ###
+        # Process file.
+        ###
+        script="${2}/script/workflow/${symbol}process.sh"
+        sh "${script}" "${1}" "${2}" ${year} "${symbol}" "${variable}" ${radius} "${date}" "${dataset}"
+        if [ $? -ne 0 ]
+        then
+            echo "*************"
+            echo "*** ERROR ***"
+            echo "*************"
+            exit 1
+        fi
+        exit 0
 
         ###
         # Add to Store.
