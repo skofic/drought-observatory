@@ -108,6 +108,7 @@ for year in $(seq ${3} 1 ${4}); do
             echo "*************"
             exit 1
         fi
+        exit 0
 
   #      ###
   #      # Process file.
