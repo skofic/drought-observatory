@@ -44,7 +44,6 @@ for year in $(seq ${3} 1 ${4}); do
   echo "--------------------------------------------------"
   echo "- PROCESSING YEAR ${year}"
   echo "--------------------------------------------------"
-  echo ""
 
   ###
   # Iterate prefixes.
@@ -52,6 +51,7 @@ for year in $(seq ${3} 1 ${4}); do
   while IFS=' ' read -r symbol prefix variable radius dataset
   do
 
+    echo ""
     echo "--------------------------------------------------"
     echo "- Year:     ${year}"
     echo "- Symbol:   ${symbol}"
