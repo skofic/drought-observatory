@@ -11,6 +11,7 @@ source "${HOME}/.ArangoDB"
 DB_NAME="$1"
 COLLECTION_LOAD="LOAD"
 COLLECTION_STORE="STORE"
+COLLECTION_GROUP="GROUP"
 COLLECTION_SHAPES="DroughtObservatoryMap"
 FILE_SHAPES="${2}/data/required/DroughtObservatoryMap.jsonl.gz"
 INDEX_NAME1="idx_hash"
@@ -27,7 +28,8 @@ echo "**************************************************"
 echo "*** DATABASE:      ${DB_NAME}"
 echo "*** COLLECTION 1:  ${COLLECTION_LOAD}"
 echo "*** COLLECTION 2:  ${COLLECTION_STORE}"
-echo "*** COLLECTION 3:  ${COLLECTION_SHAPES}"
+echo "*** COLLECTION 3:  ${COLLECTION_GROUP}"
+echo "*** COLLECTION 4:  ${COLLECTION_SHAPES}"
 echo "*** SHAPES:        ${FILE_SHAPES}"
 echo "**************************************************"
 
@@ -75,10 +77,31 @@ if (!db._collection('$COLLECTION_STORE')) {
   console.log('Collection $COLLECTION_STORE already exists');
 }
 
+if (!db._collection('$COLLECTION_GROUP')) {
+  db._create('$COLLECTION_GROUP');
+  console.log('==> Collection $COLLECTION_GROUP created');
+} else {
+  console.log('Collection $COLLECTION_GROUP already exists');
+}
+
 ///
 // Create indexes.
 ///
-var collection = db._collection('$COLLECTION_STORE');
+var collection = db._collection('$COLLECTION_LOAD');
+if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME3'; })) {
+  collection.ensureIndex({
+  	name: '$INDEX_NAME3',
+  	type: 'persistent',
+  	fields: [
+		'value'
+  	]
+  });
+  console.log('===> Index $INDEX_NAME3 created for $COLLECTION_LOAD');
+} else {
+  console.log('Index $INDEX_NAME3 already exists');
+}
+
+collection = db._collection('$COLLECTION_STORE');
 if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME1'; })) {
   collection.ensureIndex({
   	name: '$INDEX_NAME1',
@@ -104,18 +127,20 @@ if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME2'
 } else {
   console.log('Index $INDEX_NAME2 already exists');
 }
-collection = db._collection('$COLLECTION_LOAD');
-if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME3'; })) {
+
+collection = db._collection('$COLLECTION_GROUP');
+if (!collection.getIndexes().some(function(i) { return i.name === '$INDEX_NAME2'; })) {
   collection.ensureIndex({
-  	name: '$INDEX_NAME3',
+  	name: '$INDEX_NAME2',
   	type: 'persistent',
   	fields: [
-		'value'
+		'geometry_hash',
+		'std_date'
   	]
   });
-  console.log('===> Index $INDEX_NAME3 created for $COLLECTION_LOAD');
+  console.log('===> Index $INDEX_NAME2 created for $COLLECTION_GROUP');
 } else {
-  console.log('Index $INDEX_NAME3 already exists');
+  console.log('Index $INDEX_NAME2 already exists');
 }
 " > "$TEMP_FILE"
 
@@ -160,7 +185,6 @@ if [ -e "$FILE_SHAPES" ]; then
 else
 	echo "==> Missing shape geometries."
 fi
-
 
 echo ""
 echo "**************************************************"
