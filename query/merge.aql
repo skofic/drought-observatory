@@ -6,7 +6,6 @@ FOR doc IN GROUP
     COLLECT hash = doc.geometry_hash,
             date = doc.std_date
     INTO groups
-    LIMIT 10
 
 RETURN {
     _key: CONCAT(hash, date),
