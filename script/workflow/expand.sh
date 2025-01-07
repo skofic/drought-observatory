@@ -28,6 +28,7 @@ source "${HOME}/.ArangoDB"
 folder="${1}/data/download"
 prefix="${2}${3}"
 
+echo ""
 echo "--------------------------------------------------"
 echo "- EXPAND FILES"
 echo "--------------------------------------------------"
