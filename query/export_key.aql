@@ -1,0 +1,6 @@
+
+/**
+ * Export collection with _key field only.
+ */
+FOR doc IN @@collection
+RETURN UNSET(doc, "_id", "_rev")

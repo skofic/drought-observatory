@@ -446,6 +446,48 @@ do
 
 done #iterating years
 
+###
+# Export map data.
+###
+
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ">>> EXPORT MAP DATA"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+
+###
+# Generate complete records.
+###
+arangoexport \
+	--server.endpoint "$host" \
+	--server.database "$1" \
+	--server.username "$user" \
+	--server.password "$pass" \
+	--output-directory "$cache" \
+	--custom-query-file "${2}/query/export_key.aql" \
+	--custom-query-bindvars "{\"@@collection\": \"DroughtObservatoryMap\"" \
+	--compress-output true \
+	--overwrite true \
+	--type "jsonl"
+if [ $? -ne 0 ]
+then
+	echo "*************"
+	echo "*** ERROR ***"
+	echo "*************"
+	exit 1
+fi
+
+###
+# Name dump to the DATA.
+###
+mv -f "${cache}/query.jsonl.gz" "${result}/MAP.jsonl.gz"
+if [ $? -ne 0 ]
+then
+	echo "*************"
+	echo "*** ERROR ***"
+	echo "*************"
+	exit 1
+fi
+
 echo ""
 echo "--------------------------------------------------"
 echo "- PROCESSED FILES"
