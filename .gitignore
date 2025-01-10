@@ -2,6 +2,9 @@
 # LOCAL
 ###
 
+# Log files.
+*.out
+
 # Data directory
 /data/download/*
 !/data/download/*.md
