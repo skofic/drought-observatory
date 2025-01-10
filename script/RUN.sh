@@ -265,7 +265,7 @@ do
 					echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 
 					###
-					# Import file into DroughtObservatoryMap.
+					# Import map into DroughtObservatoryMap.
 					###
 					arangoimport \
 						--server.endpoint "$host" \

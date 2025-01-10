@@ -1,0 +1,657 @@
+--------------------------------------------------
+- PREPARE FILES
+--------------------------------------------------
+
+--------------------------------------------------
+- PROCESSING YEAR 2023
+--------------------------------------------------
+
+--------------------------------------------------
+- Year:     2023
+- Symbol:   FAPAN_
+- Prefix:   fpanv_m_gdo_
+- Variable: env_climate_fapan
+- Radius:   0.04166666667
+- Dataset:  056e569a-66ef-4033-8d15-5c4c3c36c1bb
+--------------------------------------------------
+
+--------------------------------------------------
+- EXPAND FILES
+--------------------------------------------------
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/fpanv_m_gdo_2023.
+--------------------------------------------------
+- EXPANDED FILES
+--------------------------------------------------
+
+--------------------------------------------------
+- CONVERT FILES
+--------------------------------------------------
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/fpanv_m_gdo_.
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡ DELETE TIFF files
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/fpanv_m_gdo_.
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡ DELETE converted TIFF files
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/FAPAN_.
+--------------------------------------------------
+- CONVERTED FILES
+--------------------------------------------------
+--------------------------------------------------
+- Year:     2023
+- Symbol:   FAPAR_
+- Prefix:   fparv_m_gdo_
+- Variable: env_climate_fapar
+- Radius:   0.04166666667
+- Dataset:  056e569a-66ef-4033-8d15-5c4c3c36c1bb
+--------------------------------------------------
+
+--------------------------------------------------
+- EXPAND FILES
+--------------------------------------------------
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/fparv_m_gdo_2023.
+--------------------------------------------------
+- EXPANDED FILES
+--------------------------------------------------
+
+--------------------------------------------------
+- CONVERT FILES
+--------------------------------------------------
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/fparv_m_gdo_.
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡ DELETE TIFF files
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/fparv_m_gdo_.
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡ DELETE converted TIFF files
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+No files found matching the pattern /Users/milko/Local/Development/Workshop/drought-observatory/data/download/FAPAR_.
+--------------------------------------------------
+- CONVERTED FILES
+--------------------------------------------------
+--------------------------------------------------
+- Year:     2023
+- Symbol:   CDI_
+- Prefix:   cdinx_m_edo_
+- Variable: env_climate_cdi
+- Radius:   0.020833335
+- Dataset:  7b789ef4-aa2d-4f25-91c4-feab9d4cbb9b
+--------------------------------------------------
+
+--------------------------------------------------
+- EXPAND FILES
+--------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> EXPAND cdinx_m_edo_20230101_20231221_t_400_z03.zip
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Archive:  /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230101_20231221_t_400_z03.zip
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230101_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230111_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230121_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230201_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230211_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230221_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230301_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230311_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230321_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230401_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230411_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230421_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230501_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230511_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230521_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230601_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230611_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230621_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230701_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230711_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230721_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230801_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230811_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230821_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230901_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230911_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230921_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231001_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231011_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231021_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231101_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231111_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231121_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231201_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231211_t_400_z03.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231221_t_400_z03.tif  
+--------------------------------------------------
+- EXPANDED FILES
+--------------------------------------------------
+
+--------------------------------------------------
+- CONVERT FILES
+--------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230101_t_400_z03.tif TO CDI_20230101.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230101_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230101.tif TO CDI_20230101.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230111_t_400_z03.tif TO CDI_20230111.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230111_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230111.tif TO CDI_20230111.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230121_t_400_z03.tif TO CDI_20230121.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230121_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230121.tif TO CDI_20230121.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230201_t_400_z03.tif TO CDI_20230201.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230201_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230201.tif TO CDI_20230201.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230211_t_400_z03.tif TO CDI_20230211.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230211_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230211.tif TO CDI_20230211.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230221_t_400_z03.tif TO CDI_20230221.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230221_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230221.tif TO CDI_20230221.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230301_t_400_z03.tif TO CDI_20230301.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230301_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230301.tif TO CDI_20230301.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230311_t_400_z03.tif TO CDI_20230311.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230311_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230311.tif TO CDI_20230311.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230321_t_400_z03.tif TO CDI_20230321.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230321_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230321.tif TO CDI_20230321.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230401_t_400_z03.tif TO CDI_20230401.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230401_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230401.tif TO CDI_20230401.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230411_t_400_z03.tif TO CDI_20230411.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230411_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230411.tif TO CDI_20230411.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230421_t_400_z03.tif TO CDI_20230421.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230421_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230421.tif TO CDI_20230421.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230501_t_400_z03.tif TO CDI_20230501.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230501_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230501.tif TO CDI_20230501.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230511_t_400_z03.tif TO CDI_20230511.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230511_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230511.tif TO CDI_20230511.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230521_t_400_z03.tif TO CDI_20230521.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230521_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230521.tif TO CDI_20230521.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230601_t_400_z03.tif TO CDI_20230601.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230601_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230601.tif TO CDI_20230601.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230611_t_400_z03.tif TO CDI_20230611.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230611_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230611.tif TO CDI_20230611.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230621_t_400_z03.tif TO CDI_20230621.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230621_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230621.tif TO CDI_20230621.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230701_t_400_z03.tif TO CDI_20230701.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230701_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230701.tif TO CDI_20230701.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230711_t_400_z03.tif TO CDI_20230711.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230711_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230711.tif TO CDI_20230711.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230721_t_400_z03.tif TO CDI_20230721.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230721_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230721.tif TO CDI_20230721.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230801_t_400_z03.tif TO CDI_20230801.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230801_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230801.tif TO CDI_20230801.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230811_t_400_z03.tif TO CDI_20230811.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230811_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230811.tif TO CDI_20230811.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230821_t_400_z03.tif TO CDI_20230821.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230821_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230821.tif TO CDI_20230821.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230901_t_400_z03.tif TO CDI_20230901.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230901_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230901.tif TO CDI_20230901.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230911_t_400_z03.tif TO CDI_20230911.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230911_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230911.tif TO CDI_20230911.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20230921_t_400_z03.tif TO CDI_20230921.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20230921_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20230921.tif TO CDI_20230921.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231001_t_400_z03.tif TO CDI_20231001.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231001_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231001.tif TO CDI_20231001.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231011_t_400_z03.tif TO CDI_20231011.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231011_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231011.tif TO CDI_20231011.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231021_t_400_z03.tif TO CDI_20231021.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231021_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231021.tif TO CDI_20231021.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231101_t_400_z03.tif TO CDI_20231101.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231101_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231101.tif TO CDI_20231101.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231111_t_400_z03.tif TO CDI_20231111.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231111_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231111.tif TO CDI_20231111.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231121_t_400_z03.tif TO CDI_20231121.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231121_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231121.tif TO CDI_20231121.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231201_t_400_z03.tif TO CDI_20231201.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231201_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231201.tif TO CDI_20231201.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231211_t_400_z03.tif TO CDI_20231211.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231211_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231211.tif TO CDI_20231211.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM cdinx_m_edo_20231221_t_400_z03.tif TO CDI_20231221.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 1824P x 1200L.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/cdinx_m_edo_20231221_t_400_z03.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM CDI_20231221.tif TO CDI_20231221.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡ DELETE TIFF files
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+␡ DELETE converted TIFF files
+␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡␡
+--------------------------------------------------
+- CONVERTED FILES
+--------------------------------------------------
+--------------------------------------------------
+- Year:     2023
+- Symbol:   SMA_
+- Prefix:   smian_m_eul_
+- Variable: env_climate_sma
+- Radius:   0.00833333
+- Dataset:  9eda6111-c840-4862-9759-4a805cd6fc35
+--------------------------------------------------
+
+--------------------------------------------------
+- EXPAND FILES
+--------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+> EXPAND smian_m_eul_20230101_20231221_t.zip
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Archive:  /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230101_20231221_t.zip
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230101_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230111_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230121_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230201_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230211_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230221_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230301_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230311_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230321_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230401_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230411_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230421_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230501_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230511_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230521_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230601_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230611_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230621_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230701_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230711_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230721_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230801_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230811_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230821_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230901_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230911_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230921_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231001_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231011_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231021_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231101_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231111_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231121_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231201_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231211_t.tif  
+  inflating: /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20231221_t.tif  
+--------------------------------------------------
+- EXPANDED FILES
+--------------------------------------------------
+
+--------------------------------------------------
+- CONVERT FILES
+--------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230101_t.tif TO SMA_20230101.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230101_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230101_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230101.tif TO SMA_20230101.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230111_t.tif TO SMA_20230111.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230111_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230111_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230111.tif TO SMA_20230111.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230121_t.tif TO SMA_20230121.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230121_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230121_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230121.tif TO SMA_20230121.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230201_t.tif TO SMA_20230201.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230201_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230201_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230201.tif TO SMA_20230201.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230211_t.tif TO SMA_20230211.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230211_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230211_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230211.tif TO SMA_20230211.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230221_t.tif TO SMA_20230221.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230221_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230221_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230221.tif TO SMA_20230221.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230301_t.tif TO SMA_20230301.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230301_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230301_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230301.tif TO SMA_20230301.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230311_t.tif TO SMA_20230311.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230311_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230311_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230311.tif TO SMA_20230311.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30...40...50...60...70...80...90...100 - done.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT WGS84 FROM smian_m_eul_20230321_t.tif TO SMA_20230321.tif
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Creating output file that is 4530P x 2970L.
+Using internal nodata values (e.g. 1e+20) for image /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230321_t.tif.
+Processing /Users/milko/Local/Development/Workshop/drought-observatory/data/download/smian_m_eul_20230321_t.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>> CONVERT FROM SMA_20230321.tif TO SMA_20230321.csv
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0...10...20...30
